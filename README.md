@@ -1,11 +1,10 @@
 # ANSWER
 
 ## 效果展示
-白色战队轨迹图：
+![img](assets/gifs/20260510_163202_tracking.gif)
+
 ![img](assets/images/v2.jpg)
 
-白色战队检测+轨迹视频：
-![img](assets/gifs/20260510_163202_tracking.gif)
 
 ---
 
