@@ -4,7 +4,9 @@
 <img src="assets/gifs/20260510_163202_tracking.gif" width="1920" height="1080">
 <img src="assets/images/frame_000450.jpg" width="1920" height="1080">
 <img src="assets/images/v2.jpg" width="1920" height="1080">
-事件记录表：[events.csv](https://github.com/Whale-Yu/cv-interview-questions_FPS/blob/main/assets/20260510_163202_events.csv)
+
+事件记录表：[events.csv](assets/20260510_163202_events.csv)
+
 轨迹记录表：[tracks.csv](assets/20260510_163202_tracks.csv)
 
 ---
