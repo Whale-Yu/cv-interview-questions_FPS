@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['white_player']
+
+roboflow:
+  workspace: meters-1vdny
+  project: fps-q2y7r
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/meters-1vdny/fps-q2y7r/dataset/2
