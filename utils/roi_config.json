@@ -1,0 +1,16 @@
+[
+  {
+    "name": "first_person_view",
+    "x": 42,
+    "y": 256,
+    "width": 997,
+    "height": 562
+  },
+  {
+    "name": "minimap",
+    "x": 1008,
+    "y": 108,
+    "width": 859,
+    "height": 864
+  }
+]
