@@ -1,9 +1,9 @@
 # ANSWER
 
 ## 效果展示
-![img](assets/gifs/20260510_163202_tracking.gif)
+<img src="assets/gifs/20260510_163202_tracking.gif" width="1920" height="1080">
 
-![img](assets/images/v2.jpg)
+<img src="assets/images/v2.jpg" width="1920" height="1080">
 
 
 ---
