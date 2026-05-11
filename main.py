@@ -45,7 +45,7 @@ def process_video(video_path, output_dir, map_roi=None, conf_threshold=0.5):
     print(f"Map ROI: {map_roi}")
     print(f"Confidence threshold: {conf_threshold}")
     
-    detector = PlayerDetector(model_path='weights/best.pt', conf_threshold=conf_threshold)
+    detector = PlayerDetector(model_path='weights/best_v1.pt', conf_threshold=conf_threshold)
     tracker_manager = TrackerManager()
     trajectory_extractor = TrajectoryExtractor()
     event_collector = EventCollector()
