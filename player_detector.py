@@ -12,7 +12,7 @@ class PlayerDetector:
             x1, y1, x2, y2 = roi
             frame = frame[y1:y2, x1:x2]
         
-        results = self.model(frame, conf=self.conf_threshold)
+        results = self.model(frame, conf=self.conf_threshold, verbose=False)
         detections = []
         
         for result in results:
