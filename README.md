@@ -1,10 +1,13 @@
 # ANSWER
 
 ## 成果展示
+选手检测+轨迹跟踪视频：
 <img src="assets/gifs/20260510_163202_tracking.gif" width="1920" height="1080">
 
+帧检测+轨迹跟踪图片：
 <img src="assets/images/frame_000450.jpg" width="1920" height="1080">
 
+完整轨迹地图：
 <img src="assets/images/20260510_163202_trajectory_map.jpg" width="1920" height="1080">
 
 事件记录表：[events.csv](assets/20260510_163202_events.csv)
