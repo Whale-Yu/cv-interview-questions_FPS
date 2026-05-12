@@ -3,7 +3,7 @@ import numpy as np
 from abc import ABC, abstractmethod
 
 class EventDetector(ABC):
-    """事件检测器基类"""
+    """事件检测器基类，定义所有事件检测器的通用接口"""
     
     @abstractmethod
     def detect(self, frame, frame_idx, **kwargs):
@@ -18,7 +18,7 @@ class EventDetector(ABC):
 
 
 class FireEventDetector(EventDetector):
-    """开火事件检测器（预留接口）"""
+    """开火事件检测器（预留接口）- 用于检测玩家射击行为"""
     
     def __init__(self, conf_threshold=0.5):
         """
@@ -51,7 +51,7 @@ class FireEventDetector(EventDetector):
 
 
 class PickupEventDetector(EventDetector):
-    """拾取事件检测器（预留接口）"""
+    """拾取事件检测器（预留接口）- 用于检测玩家拾取物品行为"""
     
     def __init__(self, conf_threshold=0.5):
         self.conf_threshold = conf_threshold
@@ -73,7 +73,7 @@ class PickupEventDetector(EventDetector):
 
 
 class KillEventDetector(EventDetector):
-    """击杀事件检测器（预留接口）"""
+    """击杀事件检测器（预留接口）- 用于检测玩家击杀敌人行为"""
     
     def __init__(self, conf_threshold=0.5):
         self.conf_threshold = conf_threshold
@@ -95,7 +95,7 @@ class KillEventDetector(EventDetector):
 
 
 class DeathEventDetector(EventDetector):
-    """死亡事件检测器（预留接口）"""
+    """死亡事件检测器（预留接口）- 用于检测玩家死亡行为"""
     
     def __init__(self, conf_threshold=0.5):
         self.conf_threshold = conf_threshold
@@ -117,7 +117,7 @@ class DeathEventDetector(EventDetector):
 
 
 class EventDetectorManager:
-    """事件检测管理器"""
+    """事件检测管理器 - 统一管理多种事件检测器并协调检测流程"""
     
     def __init__(self, fps=30):
         self.fps = fps
@@ -185,8 +185,9 @@ class EventDetectorManager:
 
 def create_default_event_detectors():
     """
-    创建默认的事件检测器
+    创建默认的事件检测器实例
     返回一个EventDetectorManager实例，包含所有可用的事件检测器
+    目前所有检测器都是预留接口，等待后续实现具体检测逻辑
     """
     manager = EventDetectorManager(fps=30)
     
